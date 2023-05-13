@@ -64,7 +64,7 @@ exit_btn = Button(window, text="Έξοδος", bg="#808069", fg="Black", font="A
 
 #Texts
 title_text = Entry(window, width=55, bg="white", font="Arial 10")
-output_text = Text(window, width=75, height=13, background="white", font="Arial 10 bold")
+output_text = ListBox(window, width=75, height=13, background="white", font="Arial 10 bold")
 
 #Place_Everything
 title_label.place(x=30, y=10)
