@@ -13,14 +13,9 @@ def add():
 
 
 def remove():
-    x1 = title_text.get()
-    x2 = var_list1.get()
-    x3 = var_list2.get()
-    x4 = var_list3.get()
-    x5 = var_list4.get()
-    y = "- " + x1 + " μέχρι " + x2 + " " + x3 + "  Υπενθύμιση: " + x4 + " " + x5
-    if x1 == title_text.get():
-        output_text.delete(y)
+    selected = output_text.curselection()
+    if selected:
+        output_text.delete(selected)
 
 def remove_all():
     output_text.delete(0.0, END)
